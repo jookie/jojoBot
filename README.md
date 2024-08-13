@@ -8,20 +8,19 @@
 </h2>
 
 <p align="center">
- <a href="#Overview">Overview</a> •
+ <a href="#Overvan oiew">Overview</a> •
  <a href="#Features">Features</a> •
   <a href="#Interfaces">Interfaces</a> •
  <a href="#Quickstart">Quickstart</a> •
  <a href="#Credits">Credits</a>
 </p>
 
-## FinRL
-FinRL is an open-source library designed to facilitate the development of financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for practitioners to create, test, and implement trading algorithms using DRL techniques [1].
-FinRL is an open-source library designed to facilitate the development of financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for practitioners to create, test, and implement trading algorithms using DRL techniques [1].
+## JojoFin
+JojoFin is library designed to facilitate the development of financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for practitioners to create, test, and implement trading algorithms using DRL techniques.
 
 ## [Integration]
 Source code How to integrate the FinRl PPO, SAC, and TD3 algorithms into a StockBot powered by Groq,
-
+I have python scripts of Source code that I want to integrate the FinRl PPO, SAC, and TD3 algorithms into a StockBot powered by Groq , How do I run these script from the web page called page.tsx these python scripts ?
 
 <br>
 
