@@ -15,6 +15,14 @@
  <a href="#Credits">Credits</a>
 </p>
 
+## FinRL
+FinRL is an open-source library designed to facilitate the development of financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for practitioners to create, test, and implement trading algorithms using DRL techniques [1].
+FinRL is an open-source library designed to facilitate the development of financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for practitioners to create, test, and implement trading algorithms using DRL techniques [1].
+
+## [Integration]
+Source code How to integrate the FinRl PPO, SAC, and TD3 algorithms into a StockBot powered by Groq,
+
+
 <br>
 
 [Demo of StockBot](https://github.com/user-attachments/assets/a50fa266-5ae9-4869-a37f-599d7db790d9)
@@ -80,4 +88,4 @@ See [CHANGELOG.md](CHANGELOG.md) to see the latest changes and versions. Major v
 
 ## Credits
 
-This app was developed by [Benjamin Klieger](https://x.com/benjaminklieger) at [JojoFam](https://groq.com) and uses the AI Chatbot template created by Vercel: [Github Repository](https://github.com/vercel/ai-chatbot).
+This app was developed by [Jojo Family](https://x.com/benjaminklieger) at [JojoFam](https://groq.com) and uses the AI Chatbot template created by Vercel: [Github Repository](https://github.com/vercel/ai-chatbot).
