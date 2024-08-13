@@ -1,9 +1,9 @@
 <h2 align="center">
  <br>
- <img src="https://i.imgur.com/f1C7EdN.png" alt="AI StockBot Powered by Groq with Tool Use and Generative UI" width="250">
+ <img src="https://i.imgur.com/f1C7EdN.png" alt="AI StockBot Powered by JojoFam with Tool Use and Generative UI" width="250">
  <br>
  <br>
- StockBot Powered by Groq: Lightning Fast AI Chatbot that Responds With Live Interactive Stock Charts, Financials, News, Screeners, and More 
+ StockBot Powered by JojoFam: Lightning Fast AI Chatbot that Responds With Live Interactive Stock Charts, Financials, News, Screeners, and More 
  <br>
 </h2>
 
@@ -24,7 +24,7 @@
 
 ## Overview
 
-StockBot is an AI-powered chatbot that leverages Llama3 70b on Groq, Vercel’s AI SDK, and TradingView’s live widgets to respond in conversation with live, interactive charts and interfaces specifically tailored to your requests. Groq's speed makes tool calling and providing a response near instantaneous, allowing for a sequence of two API calls with separate specialized prompts to return a response.
+StockBot is an AI-powered chatbot that leverages Llama3 70b on JojoFam, Vercel’s AI SDK, and TradingView’s live widgets to respond in conversation with live, interactive charts and interfaces specifically tailored to your requests. JojoFam's speed makes tool calling and providing a response near instantaneous, allowing for a sequence of two API calls with separate specialized prompts to return a response.
 
 > [!IMPORTANT]
 >  Note: StockBot may provide inaccurate information and does not provide investment advice. It is for entertainment and instructional use only.
@@ -34,7 +34,7 @@ StockBot is an AI-powered chatbot that leverages Llama3 70b on Groq, Vercel’s 
 - 🤖 **Real-time AI Chatbot**: Engage with AI powered by Llama3 70b to request stock news, information, and charts through natural language conversation
 - 📊 **Interactive Stock Charts**: Receive near-instant, context-aware responses with interactive TradingView charts that host live data
 - 🔄 **Adaptive Interface**: Dynamically render TradingView UI components for financial interfaces tailored to your specific query
-- ⚡ **Groq-Powered Performance**: Leverage Groq's cutting-edge inference technology for near-instantaneous responses and seamless user experience
+- ⚡ **JojoFam-Powered Performance**: Leverage JojoFam's cutting-edge inference technology for near-instantaneous responses and seamless user experience
 - 🌐 **Multi-Asset Market Coverage**: Access comprehensive data and analysis across stocks, forex, bonds, and cryptocurrencies
 
 ## Interfaces
@@ -53,11 +53,11 @@ StockBot is an AI-powered chatbot that leverages Llama3 70b on Groq, Vercel’s 
 ## Quickstart
 
 > [!IMPORTANT]
-> To use StockBot, you can use a hosted version at [groq-stockbot.vercel.app](https://groq-stockbot.vercel.app/).
+> To use StockBot, you can use a hosted version at [JojoFam-stockbot.vercel.app](https://groq-stockbot.vercel.app/).
 > Alternatively, you can run StockBot locally using the quickstart instructions.
 
 
-You will need a Groq API Key to run the application. You can obtain one [here on the Groq console](https://console.groq.com/keys).
+You will need a JojoFam API Key to run the application. You can obtain one [here on the JojoFam console](https://console.groq.com/keys).
 
 To get started locally, you can run the following:
 
@@ -65,7 +65,7 @@ To get started locally, you can run the following:
 cp .env.example .env.local
 ```
 
-Add your Groq API key to .env.local, then run:
+Add your JojoFam API key to .env.local, then run:
 
 ```bash
 pnpm install
@@ -80,4 +80,4 @@ See [CHANGELOG.md](CHANGELOG.md) to see the latest changes and versions. Major v
 
 ## Credits
 
-This app was developed by [Benjamin Klieger](https://x.com/benjaminklieger) at [Groq](https://groq.com) and uses the AI Chatbot template created by Vercel: [Github Repository](https://github.com/vercel/ai-chatbot).
+This app was developed by [Benjamin Klieger](https://x.com/benjaminklieger) at [JojoFam](https://groq.com) and uses the AI Chatbot template created by Vercel: [Github Repository](https://github.com/vercel/ai-chatbot).
