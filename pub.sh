@@ -12,10 +12,6 @@ git push -u origin main
 # git push --set-upstream origin main
 # git branch -M main
 # git push -u origin main
-
-# ssh-keygen -t ed25519 -C "dovpeles@gmail.com"
-
-
 # git remote add origin
 git add .
 git commit -m "fix commit"
