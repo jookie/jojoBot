@@ -15,9 +15,6 @@
 git add .
 git commit -m "fix commit"
 git push -u origin main
-# Creating a New Git Repository on a Hosting Service (e.g., GitHub, GitLab):
-# 1. Create a Repository on the Hosting Service:
-# For GitHub:
 
 # Go to GitHub and log in.
 # 1. Click on the "New" button to create a new repository.
