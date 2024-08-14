@@ -11,19 +11,19 @@ export function EmptyScreen() {
           Welcome to the StockBot powered by Jojo-Trades!
         </h1>
         <p className="leading-normal text-sm">
-          Open source AI chatbot that uses function calling to render relevant
+          Chatbot that uses function calling to render relevant
           TradingView stock market widgets.{' '}
           <span className="font-muted-foreground">
             Built with{' '}
             <ExternalLink href="https://sdk.vercel.ai">
-              Vercel AI SDK{' '}
+              Jojo AI SDK{' '}
             </ExternalLink>
             <ExternalLink href="https://tradingview.com">
               , TradingView Widgets
             </ExternalLink>
             , and powered by{' '}
             <ExternalLink href="https://groq.com">
-              Llama3-70b on Jojo
+              Jojo
             </ExternalLink>
           </span>
         </p>
