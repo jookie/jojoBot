@@ -47,9 +47,9 @@ const TOOL_MODEL = 'llama3-70b-8192'
 const GROQ_API_KEY_ENV = process.env.GROQ_API_KEY
 
 type ComparisonSymbolObject = {
-  symbol: string;
-  position: "SameScale";
-};
+  symbol: string
+  position: 'SameScale'
+}
 
 async function generateCaption(
   symbol: string,
@@ -61,10 +61,11 @@ async function generateCaption(
     baseURL: 'https://api.groq.com/openai/v1',
     apiKey: GROQ_API_KEY_ENV
   })
-  
-  const stockString = comparisonSymbols.length === 0
-  ? symbol
-  : [symbol, ...comparisonSymbols.map(obj => obj.symbol)].join(', ');
+
+  const stockString =
+    comparisonSymbols.length === 0
+      ? symbol
+      : [symbol, ...comparisonSymbols.map(obj => obj.symbol)].join(', ')
 
   aiState.update({
     ...aiState.get(),
@@ -257,10 +258,13 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
               .describe(
                 'The name or symbol of the stock or currency. e.g. DOGE/AAPL/USD.'
               ),
-            comparisonSymbols: z.array(z.object({
-              symbol: z.string(),
-              position: z.literal("SameScale")
-            }))
+            comparisonSymbols: z
+              .array(
+                z.object({
+                  symbol: z.string(),
+                  position: z.literal('SameScale')
+                })
+              )
               .default([])
               .describe(
                 'Optional list of symbols to compare. e.g. ["MSFT", "GOOGL"]'
@@ -316,7 +320,10 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
 
             return (
               <BotCard>
-                <StockChart symbol={symbol} comparisonSymbols={comparisonSymbols} />
+                <StockChart
+                  symbol={symbol}
+                  comparisonSymbols={comparisonSymbols}
+                />
                 {caption}
               </BotCard>
             )
@@ -520,7 +527,7 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
           description:
             'This tool shows a generic stock screener which can be used to find new stocks based on financial or technical parameters.',
           parameters: z.object({}),
-          generate: async function* ({ }) {
+          generate: async function* ({}) {
             yield (
               <BotCard>
                 <></>
@@ -577,7 +584,7 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
         showMarketOverview: {
           description: `This tool shows an overview of today's stock, futures, bond, and forex market performance including change values, Open, High, Low, and Close values.`,
           parameters: z.object({}),
-          generate: async function* ({ }) {
+          generate: async function* ({}) {
             yield (
               <BotCard>
                 <></>
@@ -634,7 +641,7 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
         showMarketHeatmap: {
           description: `This tool shows a heatmap of today's stock market performance across sectors. It is preferred over showMarketOverview if asked specifically about the stock market.`,
           parameters: z.object({}),
-          generate: async function* ({ }) {
+          generate: async function* ({}) {
             yield (
               <BotCard>
                 <></>
@@ -691,7 +698,7 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
         showETFHeatmap: {
           description: `This tool shows a heatmap of today's ETF performance across sectors and asset classes. It is preferred over showMarketOverview if asked specifically about the ETF market.`,
           parameters: z.object({}),
-          generate: async function* ({ }) {
+          generate: async function* ({}) {
             yield (
               <BotCard>
                 <></>
@@ -748,7 +755,7 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
         showTrendingStocks: {
           description: `This tool shows the daily top trending stocks including the top five gaining, losing, and most active stocks based on today's performance`,
           parameters: z.object({}),
-          generate: async function* ({ }) {
+          generate: async function* ({}) {
             yield (
               <BotCard>
                 <></>
@@ -821,7 +828,7 @@ Assistant (you): { "tool_call": { "id": "pending", "type": "function", "function
         <div className="border p-4">
           <div className="text-red-700 font-medium">Error: {err.message}</div>
           <a
-            href="https://github.com/bklieger-groq/stockbot-on-groq/issues"
+            href="https://github.com/jookie/jojoBot/issues"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-sm text-red-800 hover:text-red-900"
