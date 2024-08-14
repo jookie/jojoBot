@@ -10,6 +10,8 @@ import type { AI } from '@/lib/chat/actions'
 import { nanoid } from 'nanoid'
 import { UserMessage } from './stocks/message'
 
+import { ColabNotebooks } from '@/components/jojoTrade/RunScriptButton'
+
 export interface ChatPanelProps {
   id?: string
   title?: string
@@ -85,7 +87,7 @@ export function ChatPanel({
         isAtBottom={isAtBottom}
         scrollToBottom={scrollToBottom}
       />
-
+      <ColabNotebooks />
       <div className="mx-auto sm:max-w-2xl sm:px-4">
         <div className="mb-4 grid grid-cols-2 gap-2 px-4 sm:px-0">
           {messages.length === 0 &&
