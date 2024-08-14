@@ -2,10 +2,10 @@
 # export PATH=/usr/local/share/npm/bin:$PATH
 # git checkout -b my-new-branch
 # …or push an existing repository from the command line
-git remote -v
-git remote add origin https://github.com/jookie/jojoBot.git
-git branch -M main
-git push -u origin main
+# git remote -v
+# git remote add origin https://github.com/jookie/jojoBot.git
+# git branch -M main
+# git push -u origin main
 # git remote add origin
 # git remote add origin https://github.com/jookie/jojoStock.git
 # git push --set-upstream origin main

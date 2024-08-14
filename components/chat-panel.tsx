@@ -9,7 +9,6 @@ import { useAIState, useActions, useUIState } from 'ai/rsc'
 import type { AI } from '@/lib/chat/actions'
 import { nanoid } from 'nanoid'
 import { UserMessage } from './stocks/message'
-
 import { ColabNotebooks } from '@/components/jojoTrade/RunScriptButton'
 
 export interface ChatPanelProps {

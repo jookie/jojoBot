@@ -1,6 +1,5 @@
 // RunScriptButton.tsx by chatGPT
-import { cva, type VariantProps } from 'class-variance-authority'
-import React from 'react';
+import React from 'react'
 const notebooks = [
   {
     name: 'Stocks',
@@ -20,9 +19,9 @@ const notebooks = [
 ]
 import { cn } from '@/lib/utils'
 
-export function ColabNotebooks({ className, ...props }: React.ComponentProps<'p'>) {
+export function ColabNotebooks({ className, ...props }: React.ComponentProps<'div'>) {
   return (
-    <p
+    <div
       className={cn(
         'px-2 text-center text-xs leading-normal text-muted-foreground',
         className)} >
@@ -61,7 +60,7 @@ export function ColabNotebooks({ className, ...props }: React.ComponentProps<'p'
           ))}
         </tbody>
       </table>
-    </p>
+    </div>
   )
 }
 
