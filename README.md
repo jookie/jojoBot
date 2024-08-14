@@ -22,6 +22,10 @@ JojoFin is library designed to facilitate the development of financial trading s
 Source code How to integrate the FinRl PPO, SAC, and TD3 algorithms into a StockBot powered by Groq,
 I have python scripts of Source code that I want to integrate the FinRl PPO, SAC, and TD3 algorithms into a StockBot powered by Groq , How do I run these script from the web page called page.tsx these python scripts ?
 
+Make Source code to integrate run python script file On a react and next libs
+
+
+
 <br>
 
 [Demo of StockBot](https://github.com/user-attachments/assets/a50fa266-5ae9-4869-a37f-599d7db790d9)
