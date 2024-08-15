@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { exec } from 'child_process';
 
 export async function GET(request: NextRequest) {
-    exec('python3 path/to/your/script.py', (error, stdout, stderr) => {
+    exec('t2.py', (error, stdout, stderr) => {
         if (error) {
             console.error(`Error: ${error.message}`);
             return NextResponse.json({ error: error.message });

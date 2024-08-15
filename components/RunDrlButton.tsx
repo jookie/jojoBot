@@ -3,7 +3,7 @@
 
 import { useState } from 'react'
 
-export default function RunDrlButton() {
+export function RunDrlButton() {
   const [result, setResult] = useState<string | null>(null)
 
   const handleClick = async () => {
