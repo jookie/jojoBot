@@ -33,7 +33,7 @@ StockBot is an AI-powered chatbot that leverages Llama3 70b on JojoFam, Vercelâ€
 
 ## Google Colab Notebooks
 
-Explore the examples for Stocks, Options, and Crypto utilizing alpaca-py in the notebooks provided below. Open them in Google Colab to jumpstart your development journey! 
+Examples for Stocks, Options, and Crypto in the notebooks provided below. Open them in Google Colab to jumpstart your journey! 
 
 | Notebooks                                                                                |                                                                                                       Open in Google Colab                                                                                                       |
 | :--------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -79,7 +79,6 @@ Explore the examples for Stocks, Options, and Crypto utilizing alpaca-py in the 
 | **FinRL**: A deep reinforcement learning library for automated stock trading in quantitative finance | NeurIPS 2020 Deep RL Workshop | [paper](https://arxiv.org/abs/2011.09607) | 87 | 2020 |
 | Deep reinforcement learning for automated stock trading: An ensemble strategy | ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154 | 2020 |
 | Practical deep reinforcement learning approach for stock trading | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services | [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples)) | 164 | 2018 |
-
 </details>
 </response>
 
