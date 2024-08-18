@@ -29,7 +29,9 @@ export function ColabNotebooks({ className, ...props }: React.ComponentProps<'di
     <div
       className={cn(
         'px-2 text-center text-xs leading-normal text-muted-foreground',
-        className)} >
+        className
+      )}
+    >
       <table>
         <thead>
           <tr>
@@ -47,6 +49,18 @@ export function ColabNotebooks({ className, ...props }: React.ComponentProps<'di
                   rel="noopener noreferrer"
                 >
                   {notebook.name}
+                </a>
+              </td>
+              <td>
+                <a
+                  href={notebook.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://colab.research.google.com/assets/colab-badge.svg"
+                    alt={`Open ${notebook.name} in Google Colab`}
+                  />
                 </a>
               </td>
               <td>

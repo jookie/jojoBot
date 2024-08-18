@@ -37,9 +37,10 @@ Examples for Stocks, Options, and Crypto in the notebooks provided below. Open t
 
 | Notebooks                                                                                |                                                                                                       Open in Google Colab                                                                                                       |
 | :--------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [Stocks](stocks-trading-basic.ipynb)         |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/stocks-trading-basic.ipynb)   |
-| [Options](options-trading-basic.ipynb)                   |     [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/options-trading-basic.ipynb)      |
-| [Crypto](crypto-trading-basic.ipynb)                                   |         [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/crypto-trading-basic.ipynb)          |
+| [Stocks Orders](stocks-trading-basic.ipynb)         |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/stocks-trading-basic.ipynb)   |
+| [Options Orders](options-trading-basic.ipynb)                   |     [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/options-trading-basic.ipynb)      |
+| [Crypto Orders](crypto-trading-basic.ipynb)                                   |         [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/crypto-trading-basic.ipynb)          |
+| [Stock Trading](api/tradingBot.ipynb)                                   |         [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](api/tradingBot.ipynb)          |
 
 ## Features
 
