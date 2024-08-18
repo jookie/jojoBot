@@ -1,25 +1,25 @@
-# Disclaimer: Nothing herein is financial advice, and NOT a recommendation to trade real money. Many platforms exist for simulated trading (paper trading) which can be used for building and developing the methods discussed. Please use common sense and always first consult a professional before trading or investing.
+
 # install finrl library
 # %pip install --upgrade git+https://github.com/AI4Finance-Foundation/FinRL.git
 # Alpaca keys
 from __future__ import annotations
 
-import argparse
+# import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument("data_key", help="data source api key")
-parser.add_argument("data_secret", help="data source api secret")
-parser.add_argument("data_url", help="data source api base url")
-parser.add_argument("trading_key", help="trading api key")
-parser.add_argument("trading_secret", help="trading api secret")
-parser.add_argument("trading_url", help="trading api base url")
-args = parser.parse_args()
-DATA_API_KEY = args.data_key
-DATA_API_SECRET = args.data_secret
-DATA_API_BASE_URL = args.data_url
-TRADING_API_KEY = args.trading_key
-TRADING_API_SECRET = args.trading_secret
-TRADING_API_BASE_URL = args.trading_url
+# parser = argparse.ArgumentParser()
+# parser.add_argument("data_key", help="data source api key")
+# parser.add_argument("data_secret", help="data source api secret")
+# parser.add_argument("data_url", help="data source api base url")
+# parser.add_argument("trading_key", help="trading api key")
+# parser.add_argument("trading_secret", help="trading api secret")
+# parser.add_argument("trading_url", help="trading api base url")
+# args = parser.parse_args()
+DATA_API_KEY = "PKVD6WOSPEMKS0UI6A3K" #args.data_key
+DATA_API_SECRET = "BxT64PIQtDBb*tnW"  #args.data_secret
+DATA_API_BASE_URL = 'https://paper-api.alpaca.markets' #args.data_url
+TRADING_API_KEY = "PKVD6WOSPEMKS0UI6A3K" #args.trading_key
+TRADING_API_SECRET = "BxT64PIQtDBb*tnW"  #args.trading_secret
+TRADING_API_BASE_URL = 'https://paper-api.alpaca.markets' #args.trading_url
 
 print("DATA_API_KEY: ", DATA_API_KEY)
 print("DATA_API_SECRET: ", DATA_API_SECRET)
@@ -28,10 +28,24 @@ print("TRADING_API_KEY: ", TRADING_API_KEY)
 print("TRADING_API_SECRET: ", TRADING_API_SECRET)
 print("TRADING_API_BASE_URL: ", TRADING_API_BASE_URL)
 
+import alpaca_trade_api
 from finrl.meta.env_stock_trading.env_stocktrading_np import StockTradingEnv
 from finrl.meta.paper_trading.alpaca import PaperTradingAlpaca
 from finrl.meta.paper_trading.common import train, test, alpaca_history, DIA_history
+# from finrl.meta.PaperTradingAlpaca.alpaca_trade_api import PaperTradingAlpaca
 from finrl.config import INDICATORS
+
+
+
+# ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+# xgboost 2.1.1 requires nvidia-nccl-cu12; platform_system == "Linux" and platform_machine != "aarch64", which is not installed.
+# cudf-cu12 24.4.1 requires pandas<2.2.2dev0,>=2.0, but you have pandas 2.2.2 which is incompatible.
+# google-colab 1.0.0 requires pandas==2.1.4, but you have pandas 2.2.2 which is incompatible.
+# osqp 0.6.7.post0 requires scipy!=1.12.0,>=0.13.2, but you have scipy 1.12.0 which is incompatible.
+
+
+# pip install finrl.meta.paper_trading.alpaca
+# pip install finrl.meta.paper_trading.common
 
 # Import Dow Jones 30 Symbols
 from finrl.config_tickers import DOW_30_TICKER
