@@ -13,6 +13,7 @@
   <a href="#Interfaces">Interfaces</a> •
  <a href="#Quickstart">Quickstart</a> •
  <a href="#Credits">Credits</a>
+ <a href= "#Foudation">Foundation</a>
 </p>
 
 ## JojoFin
@@ -117,3 +118,7 @@ See [CHANGELOG.md](CHANGELOG.md) to see the latest changes and versions. Major v
 ## Credits
 
 This app was developed by [Jojo Family](https://x.com/benjaminklieger) at [JojoFam](https://groq.com) and uses the AI Chatbot template created by Vercel: [Github Repository](https://github.com/vercel/ai-chatbot).
+
+## Foundation
+
+[AI4Finance-Foundation](https://github.com/AI4Finance-Foundation)
