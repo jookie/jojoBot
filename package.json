@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://jookie.github.io/JojoBot",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -10,7 +11,10 @@
     "seed": "node -r dotenv/config ./scripts/seed.mjs",
     "type-check": "tsc --noEmit",
     "format:write": "prettier --write \"{app,lib,components}/**/*.{ts,tsx,mdx}\" --cache",
-    "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache"
+    "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
+}
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.34",
