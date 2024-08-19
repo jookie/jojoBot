@@ -14,7 +14,6 @@
     "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out"
-}
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.34",
