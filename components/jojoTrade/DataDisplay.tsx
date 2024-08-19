@@ -1,6 +1,7 @@
 // components/DataDisplay.tsx
 import React, { useEffect, useState } from 'react'
 
+
 const DataDisplay: React.FC = () => {
   const [data, setData] = useState<string | null>(null)
 
