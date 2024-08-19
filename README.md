@@ -460,3 +460,171 @@ To modify the code so that the results of running the Python script are saved lo
 2. [advsyscon.com - Python Job Scheduling with Cron](https://www.advsyscon.com/blog/python-job-scheduling/)
 3. [discuss.python.org - Help me to initialize or trigger a python file to run every 2 hours](https://discuss.python.org/t/help-me-to-initialize-or-trigger-a-python-file-to-run-in-every-2-hrs/51347)
 </response>
+
+To modify your Next.js project so that the results of running a Python script are saved locally as text and images, and then displayed on the front end, you can follow these steps:
+
+### Folder Structure
+
+Here’s the updated folder structure:
+
+```
+/jojobot
+  /app
+    /train
+      page.tsx
+  /components
+    DataDisplay.tsx
+  /public
+    /results
+  /styles
+  /node_modules
+  package.json
+  next.config.js
+```
+
+### 1. Create the Python Script
+
+First, create a Python script that generates the results (text and images) and saves them to the `public/results` directory.
+
+```python
+import os
+from datetime import datetime
+import matplotlib.pyplot as plt
+
+# Define the directory to save results
+results_dir = os.path.join(os.getcwd(), 'public/results')
+
+# Ensure the directory exists
+os.makedirs(results_dir, exist_ok=True)
+
+# Generate a text result
+text_result = "Result generated at " + datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+text_file_path = os.path.join(results_dir, 'result.txt')
+
+# Save the text result
+with open(text_file_path, 'w') as f:
+    f.write(text_result)
+
+# Generate a simple plot as an image result
+plt.figure()
+plt.plot([1, 2, 3, 4], [10, 20, 25, 30])
+plt.title("Sample Plot")
+image_file_path = os.path.join(results_dir, 'result.png')
+
+# Save the plot
+plt.savefig(image_file_path)
+plt.close()
+```
+
+### 2. Run the Python Script on Button Click
+
+You can run this script every minute when triggered by a button on your front end.
+
+**Next.js API Route to Trigger Python Script:**
+
+Create an API route in Next.js that triggers the Python script:
+
+```javascript
+// /jojobot/pages/api/run-script.js
+import { exec } from 'child_process';
+
+export default function handler(req, res) {
+  exec('python3 path_to_your_script.py', (error, stdout, stderr) => {
+    if (error) {
+      res.status(500).json({ error: stderr });
+    } else {
+      res.status(200).json({ message: 'Script executed successfully' });
+    }
+  });
+}
+```
+
+**Front-end Button to Trigger API:**
+
+Add a button to trigger the API route:
+
+```javascript
+// /jojobot/app/train/page.tsx
+import { useState } from 'react';
+
+function RunScriptButton() {
+  const [status, setStatus] = useState('');
+
+  const runScript = async () => {
+    const res = await fetch('/api/run-script');
+    const data = await res.json();
+    setStatus(data.message || data.error);
+  };
+
+  return (
+    <div>
+      <button onClick={runScript}>Run Script</button>
+      <p>{status}</p>
+    </div>
+  );
+}
+
+export default RunScriptButton;
+```
+
+### 3. Display Saved Results on the Front End
+
+To display the saved text and images, create a React component that fetches and displays the contents of the `public/results` directory.
+
+```javascript
+// /jojobot/components/DataDisplay.tsx
+import { useEffect, useState } from 'react';
+
+function DataDisplay() {
+  const [textResult, setTextResult] = useState('');
+  const [imageSrc, setImageSrc] = useState('');
+
+  useEffect(() => {
+    // Fetch the text result
+    fetch('/results/result.txt')
+      .then((res) => res.text())
+      .then((data) => setTextResult(data));
+
+    // Set the image source
+    setImageSrc('/results/result.png');
+  }, []);
+
+  return (
+    <div>
+      <h2>Results</h2>
+      <p>{textResult}</p>
+      {imageSrc && <img src={imageSrc} alt="Result Plot" />}
+    </div>
+  );
+}
+
+export default DataDisplay;
+```
+
+### 4. Integrate Everything on the Front End
+
+Finally, modify your `page.tsx` to include both the `RunScriptButton` and `DataDisplay` components.
+
+```javascript
+// /jojobot/app/train/page.tsx
+import RunScriptButton from '../../components/RunScriptButton';
+import DataDisplay from '../../components/DataDisplay';
+
+export default function TrainPage() {
+  return (
+    <div>
+      <h1>Run Training</h1>
+      <RunScriptButton />
+      <DataDisplay />
+    </div>
+  );
+}
+```
+
+### Summary
+
+- **Python Script:** Saves text and image results in the `public/results` directory.
+- **Next.js API Route:** Triggers the Python script execution.
+- **Front-end Components:** Button triggers the script, and saved results are displayed.
+
+This setup should enable your Next.js project to run the Python script, save the results locally, and display them on the front end.
