@@ -1,6 +1,6 @@
 // app/train/page.tsx
 import React from 'react'
-import DataDisplay from '../../components/jojoTrade/DataDisplay'
+import DataDisplay from './../../components/jojoTrade/DataDisplay'
 
 const TrainPage: React.FC = () => {
   return (
