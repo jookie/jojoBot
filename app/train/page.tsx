@@ -1,21 +1,13 @@
 // /jojobot/app/train/page.tsx
-import { useState } from 'react'
+import RunScriptButton from './../../components/jojoTrade/RunScriptButton'
+import DataDisplay from     './../../components/jojoTrade/DataDisplay'
 
-function RunScriptButton() {
-  const [status, setStatus] = useState('')
-
-  const runScript = async () => {
-    const res = await fetch('/api/run-script')
-    const data = await res.json()
-    setStatus(data.message || data.error)
-  }
-
+export default function TrainPage() {
   return (
     <div>
-      <button onClick={runScript}>Run Script</button>
-      <p>{status}</p>
+      <h1>Run Training</h1>
+      <RunScriptButton />
+      <DataDisplay />
     </div>
   )
 }
-
-export default RunScriptButton
