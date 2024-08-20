@@ -1,19 +1,14 @@
 # git init
 # export PATH=/usr/local/share/npm/bin:$PATH
 # git checkout -b my-new-branch
-# …or push an existing repository from the command line
-git remote -v
-# git remote add origin https://github.com/jookie/jojoBot.git
-# git branch -M main
-# git push -u origin main
-# git remote add origin
+#
+# git remote -v
 # git remote add origin https://github.com/jookie/jojoStock.git
-git push --set-upstream origin main
+# git push --set-upstream origin main
 # git branch -M main
 git add .
 git commit -m "fix commit"
 git push -u origin main
-
 # -----------Go to GitHub and log in.
 # 1. Click on the "New" button to create a new repository.
 # 2. Name your repository and add a description.
