@@ -434,3 +434,85 @@ export default TrainPage;
 2. [advsyscon.com - Python Job Scheduling with Cron](https://www.advsyscon.com/blog/python-job-scheduling/)
 3. [discuss.python.org - Help me to initialize or trigger a python file to run every 2 hours](https://discuss.python.org/t/help-me-to-initialize-or-trigger-a-python-file-to-run-in-every-2-hrs/51347)
 </response>
+
+To set up your Next.js project to run a Python script, save the results locally, and display them on the front end, follow these steps:
+
+### 1. **Run the Python Script in Next.js:**
+   - Use Node.js’s `child_process` module to execute the Python script from within an API route in your Next.js project.
+   - Example code (TypeScript):
+
+   ```typescript
+   import { exec } from 'child_process';
+   import type { NextApiRequest, NextApiResponse } from 'next';
+
+   export default function handler(req: NextApiRequest, res: NextApiResponse) {
+     exec('python3 ./../../scripts/train.py', (error, stdout, stderr) => {
+       if (error) {
+         res.status(500).json({ error: stderr });
+       } else {
+         // Save stdout to a file or return the output directly
+         res.status(200).json({ message: 'Script executed successfully', output: stdout });
+       }
+     });
+   }
+   ```
+
+### 2. **Save Results Locally:**
+   - You can save the output of the Python script to a file using Node.js’s `fs` module.
+   - Example:
+
+   ```typescript
+   import { exec } from 'child_process';
+   import fs from 'fs';
+   import type { NextApiRequest, NextApiResponse } from 'next';
+
+   export default function handler(req: NextApiRequest, res: NextApiResponse) {
+     exec('python3 ./../../scripts/train.py', (error, stdout, stderr) => {
+       if (error) {
+         res.status(500).json({ error: stderr });
+       } else {
+         // Save the output to a file
+         fs.writeFileSync('./results/output.txt', stdout);
+         res.status(200).json({ message: 'Script executed and result saved successfully' });
+       }
+     });
+   }
+   ```
+
+### 3. **Display the Results on the Front End:**
+   - Create a React component to fetch and display the saved results.
+
+   ```typescript
+   import { useEffect, useState } from 'react';
+
+   function DataDisplay() {
+     const [textResult, setTextResult] = useState('');
+
+     useEffect(() => {
+       fetch('/api/get-results')  // This API route should return the saved results
+         .then((res) => res.text())
+         .then((data) => setTextResult(data));
+     }, []);
+
+     return (
+       <div>
+         <h2>Results</h2>
+         <p>{textResult}</p>
+       </div>
+     );
+   }
+
+   export default DataDisplay;
+   ```
+
+### Summary
+- **Run the Python script** using a custom API route.
+- **Save the script's output** locally in a file.
+- **Fetch and display the saved output** in a front-end component.
+
+This setup will allow your Next.js application to integrate Python scripts, process their results, and present them to users effectively.
+
+## 🌐 Sources
+- [stackoverflow.com - Running python scripts in Next.js](https://stackoverflow.com/questions/68013605/running-python-scripts-in-next-js)
+- [docs.deque.com - Save Results Locally](https://docs.deque.com/devtools-mobile/2023.8.16/en/android-save-result)
+- [docs.formvibes.com - Display Data on Frontend](https://docs.formvibes.com/article/121-display-data-on-the-frontend)
