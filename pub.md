@@ -1,12 +1,3 @@
-<response>
-# how to install requirements.txt
-
-1. **Navigate to the Project Directory:**
-   Open your terminal or command prompt and change to the directory where your `requirements.txt` file is located. You can use the `cd` command to change directories.
-
-   ```bash
-   cd path/to/your/project
-   ```
 
 2. **Ensure Virtual Environment is Activated:**
    It is recommended to use a virtual environment to manage your project's dependencies. You can activate your virtual environment using:
@@ -27,10 +18,7 @@
 
    ```bash
    pip install -r requirements.txt
-   ```
-
-   This command will read the `requirements.txt` file and install all the packages specified within it [[1](https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from)][[2](https://note.nkmk.me/en/python-pip-install-requirements/)].
-
+  
 4. **Verify Installation:**
    You can verify that the packages were installed correctly by listing installed packages:
 
@@ -38,15 +26,9 @@
    pip list
    ```
 
-   This will show you all the packages that are currently installed in your environment.
-
-Using `requirements.txt` allows for consistent environment setups across different systems, making it easier to share and deploy projects.
-
 # 🗒️ Answer 2
 
 To collapse a cell in a Jupyter Notebook, you can follow these steps:
-
-1. **Use the JupyterLab Interface**: If you are using JupyterLab, you can collapse a code cell by clicking the blue vertical bar that appears when you hover to the left of the cell. This feature is not available in classic Jupyter Notebook[[2](https://discourse.jupyter.org/t/can-i-collapse-fold-cells-in-the-exported-html-file-from-a-notebook/8579)].
 
 2. **Install nbextensions**: If you're using classic Jupyter Notebook, you can install `nbextensions`, which provides additional functionality, including the ability to collapse cells.
    - Install nbextensions using the following command:
@@ -61,6 +43,7 @@ To collapse a cell in a Jupyter Notebook, you can follow these steps:
    - Use `Ctrl` + `Shift` + `-` to collapse the cell.
    - Use `Ctrl` + `Shift` + `+` to expand the cell again.
 
+## Start a new repository
 rm -rf .git
 git init
 
