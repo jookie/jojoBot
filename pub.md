@@ -17,7 +17,7 @@
    Run the following command to install all the packages listed in the `requirements.txt` file:
 
    ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
   
 4. **Verify Installation:**
    You can verify that the packages were installed correctly by listing installed packages:
