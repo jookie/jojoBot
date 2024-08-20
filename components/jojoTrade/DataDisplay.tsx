@@ -1,4 +1,5 @@
 // /jojobot/components/DataDisplay.tsx
+'use client'
 import { useEffect, useState } from 'react';
 
 function DataDisplay() {
