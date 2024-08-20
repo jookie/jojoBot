@@ -2,7 +2,7 @@
 import RunScriptButton from './../../components/jojoTrade/RunScriptButton'
 import DataDisplay from     './../../components/jojoTrade/DataDisplay'
 
-export default function TrainPage() {
+export function TrainPage() {
   return (
     <div>
       <h1>Run Training</h1>
