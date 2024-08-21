@@ -10,7 +10,7 @@ lz4 # for ccxt
 # plot
 matplotlib # plot library 
 # data handling
-numpy>=1.17.3 # data handling
+numpy>=1.24.3 # data handling
 pandas>=1.1.5 # data handling
 # testing requirements
 pytest # testing 
@@ -39,6 +39,8 @@ stable-baselines3 # stable baselines3
 gymnasium # for gym 
 # pytorch
 # elegantrl
+Flask==3.0.3
+werkzeug==2.3.8
 
 
 
