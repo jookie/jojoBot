@@ -75,8 +75,8 @@ const RunScriptButton: React.FC = () => {
       const response = await fetch('/api/run-script', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ scriptName: 'path/to/your_script.py' }),
-      });
+        body: JSON.stringify({ scriptName: 'run-script' })
+      })
       const data = await response.json();
       console.log(data.output);
     } catch (error) {
@@ -84,7 +84,7 @@ const RunScriptButton: React.FC = () => {
     }
   };
 
-  return <button onClick={runScript}>Run Python Script</button>;
+  return <button onClick={runScript}>Run Training Script</button>;
 };
 
 export default RunScriptButton;

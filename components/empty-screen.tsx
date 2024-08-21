@@ -8,21 +8,21 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 border bg-background p-8">
         <h1 className="text-lg font-semibold">
-          Welcome to the StockBot powered by Jojo-Trades!
+          Welcome to the TraderBot powered by Jojo-Trades!
         </h1>
         <p className="leading-normal text-sm">
           Render TradingView
-          stock market widgets.{' '}
+          stock market widgets.{' Jojo '}
           <span className="font-muted-foreground">
-            Built with{' '}
-            <ExternalLink href="https://github.com/jookie/jojoBot">
+            Built with{' JojoInfoSoft'}
+            {/* <ExternalLink href="https://github.com/jookie/jojoBot">
               Jojo AI SDK{' '}
             </ExternalLink>
             <ExternalLink href="https://tradingview.com">
               , TradingView Widgets
             </ExternalLink>
             , and powered by{' '}
-            <ExternalLink href="https://groq.com">Jojo</ExternalLink>
+            <ExternalLink href="https://groq.com">Jojo</ExternalLink> */}
           </span>
         </p>
       </div>
