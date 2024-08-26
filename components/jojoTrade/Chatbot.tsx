@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import { Button } from '@vercel/examples-ui'
 
 export function Chatbot() {
   const [input, setInput] = useState('')
   const [result, setResult] = useState('')
 
   const handleSubmit = async () => {
-    const res = await fetch('/api/run-drl', {
+    const res = await fetch('/api/run-script', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -19,13 +20,13 @@ export function Chatbot() {
 
   return (
     <div>
-      <input
+      {/* <input
         type="text"
         value={input}
         onChange={e => setInput(e.target.value)}
         placeholder="Enter your message"
-      />
-      <button onClick={handleSubmit}>Run Script</button>
+      /> */}
+      <Button>Run Script</Button>
       <div>{result ? `Result: ${result}` : 'Waiting for result...'}</div>
     </div>
   )

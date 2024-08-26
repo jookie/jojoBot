@@ -27,9 +27,7 @@ pip install -r requirements.txt
    ```
 
 # 🗒️ Answer 2
-
 To collapse a cell in a Jupyter Notebook, you can follow these steps:
-
 2. **Install nbextensions**: If you're using classic Jupyter Notebook, you can install `nbextensions`, which provides additional functionality, including the ability to collapse cells.
    - Install nbextensions using the following command:
      ```bash
