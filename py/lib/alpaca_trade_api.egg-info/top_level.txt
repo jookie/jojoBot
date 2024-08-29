@@ -1,3 +1,1 @@
-Flask-CORS
-flask
 alpaca_trade_api

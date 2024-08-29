@@ -1,0 +1,10 @@
+pandas>=0.18.1
+numpy>=1.11.1
+requests<3,>2
+urllib3<2,>1.24
+websocket-client<2,>=0.56.0
+websockets<11,>=9.0
+msgpack==1.0.3
+aiohttp<4,>=3.8.3
+PyYAML==6.0.1
+deprecation==2.1.0

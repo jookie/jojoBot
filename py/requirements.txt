@@ -1,0 +1,7 @@
+FinRL
+alpaca-trade-api: 3.2.0
+alpaca-py
+
+
+
+
