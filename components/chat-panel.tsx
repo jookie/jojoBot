@@ -36,7 +36,14 @@ export function ChatPanel({
   // const [messages2, setMessages2] = useUIState<typeof PI>()
   const { submitUserMessage } = useActions()
 
-    const exampleMessages = [
+  const scriptMessages = [
+    {
+      heading: '/api/run-py1',
+      subheading: 'Run Python Script',
+      message: 'Stock Trading'
+    },
+  ]
+  const exampleMessages = [
     {
       heading: 'What is the price',
       subheading: 'of Apple Inc.?',
@@ -68,8 +75,13 @@ export function ChatPanel({
       message: 'Show me a screener to find new stocks'
     }
   ]
-  
-  interface ExampleMessages {
+  interface ScriptMessage{
+    heading: string
+    subheading: string
+    message: string
+  }
+
+  interface ExampleMessage {
     heading: string
     subheading: string
     message: string
