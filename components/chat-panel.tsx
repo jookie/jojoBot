@@ -2,17 +2,14 @@ import * as React from 'react'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { PromptForm } from '@/components/prompt-form'
-// import { PromptForm2 } from '@/components/prompt-trade'
 import { ButtonScrollToBottom } from '@/components/button-scroll-to-bottom'
 import { IconShare } from '@/components/ui/icons'
 import { FooterText } from '@/components/footer'
 import { useAIState, useActions, useUIState } from 'ai/rsc'
 import type { AI } from '@/lib/chat/actions'
-import type { PY } from './../lib/Pytn/actions'
 import { nanoid } from 'nanoid'
 import { UserMessage } from './stocks/message'
 import { ColabNotebooks } from '@/components/jojoTrade/ColabNotebooks'
-import { RunScrButton } from './jojoTrade/RunScrButton'
 
 export interface ChatPanelProps {
   id?: string
@@ -33,16 +30,8 @@ export function ChatPanel({
 }: ChatPanelProps) {
   const [aiState] = useAIState()
   const [messages, setMessages] = useUIState<typeof AI>()
-  // const [messages2, setMessages2] = useUIState<typeof PI>()
   const { submitUserMessage } = useActions()
 
-  const scriptMessages = [
-    {
-      heading: '/api/run-py1',
-      subheading: 'Run Python Script',
-      message: 'Stock Trading'
-    },
-  ]
   const exampleMessages = [
     {
       heading: 'What is the price',
@@ -76,14 +65,13 @@ export function ChatPanel({
     }
   ]
  
-
-  interface ExampleMessages {
+  interface ExampleMessage {
     heading: string
     subheading: string
     message: string
   }
 
-  const [randExamples  , setRandExamples]   = useState<ExampleMessages[]>([])
+  const [randExamples, setRandExamples] = useState<ExampleMessage[]>([])
   
   useEffect(() => {
     const shuffledExamples = [...exampleMessages].sort(
@@ -91,57 +79,15 @@ export function ChatPanel({
     )
     setRandExamples(shuffledExamples)
   }, [])
-
+  
   return (
     <div className="fixed inset-x-0 bottom-0 w-full bg-gradient-to-b from-muted/30 from-0% to-muted/30 to-50% duration-300 ease-in-out animate-in dark:from-background/10 dark:from-10% dark:to-background/80 peer-[[data-state=open]]:group-[]:lg:pl-[250px] peer-[[data-state=open]]:group-[]:xl:pl-[300px]">
       <ButtonScrollToBottom
         isAtBottom={isAtBottom}
         scrollToBottom={scrollToBottom}
       />
-      <ColabNotebooks />
-      {<RunScrButton/> }
-      {/* {<DataDisplay /> } */}
 
       <div className="mx-auto sm:max-w-2xl sm:px-4">
-        <div className="mb-4 grid grid-cols-2 gap-2 px-4 sm:px-0">
-          {messages.length === 0 &&
-            scriptMessages.map((example, index) => (
-              <div
-                key={example.heading}
-                className={`
-                    cursor-pointer border bg-white p-4 
-                    hover:bg-zinc-50 dark:bg-zinc-950 dark:hover:bg-zinc-900
-                    ${index >= 4 ? 'hidden md:block' : ''}
-                    ${index >= 2 ? 'hidden 2xl:block' : ''}
-                  `}
-                onClick={async () => {
-                  setMessages(currentMessages => [
-                    ...currentMessages,
-                    {
-                      id: nanoid(),
-                      display: <UserMessage>{example.message}</UserMessage>
-                    }
-                  ])
-
-                  const responseMessage = await submitUserMessage(
-                    example.message
-                  )
-                  setMessages(currentMessages => [
-                    ...currentMessages,
-                    responseMessage
-                  ])
-                }}
-              >
-                <div className="text-sm font-semibold">{example.heading}</div>
-                <div className="text-sm text-zinc-600">
-                  {example.subheading}
-                </div>
-              </div>
-            ))}
-        </div>
-
-
-
         <div className="mb-4 grid grid-cols-2 gap-2 px-4 sm:px-0">
           {messages.length === 0 &&
             randExamples.map((example, index) => (
