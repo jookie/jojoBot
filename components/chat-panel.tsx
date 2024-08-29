@@ -75,19 +75,15 @@ export function ChatPanel({
       message: 'Show me a screener to find new stocks'
     }
   ]
-  interface ScriptMessage{
+ 
+
+  interface ExampleMessages {
     heading: string
     subheading: string
     message: string
   }
 
-  interface ExampleMessage {
-    heading: string
-    subheading: string
-    message: string
-  }
-
-  const [randExamples  , setRandExamples]   = useState<ExampleMessage[]>([])
+  const [randExamples  , setRandExamples]   = useState<ExampleMessages[]>([])
   
   useEffect(() => {
     const shuffledExamples = [...exampleMessages].sort(
