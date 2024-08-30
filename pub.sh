@@ -1,7 +1,6 @@
 # git init
 # export PATH=/usr/local/share/npm/bin:$PATH
 # git checkout -b my-new-branch
-#
 # git remote -v
 # git remote add origin https://github.com/jookie/jojoStock.git
 # git push --set-upstream origin main
