@@ -61,8 +61,6 @@ def main():
 
  
   warnings.filterwarnings("ignore")
-
-  # from config.py, TRADE_END_DATE is a string  
   """ Yahoo donloader for data collection """
   df = YahooDownloader(start_date = TRAIN_START_DATE,
                       end_date = TRADE_END_DATE,
@@ -109,7 +107,7 @@ def main():
 
   buy_cost_list = sell_cost_list = [0.001] * stock_dimension
   num_stock_shares = [0] * stock_dimension
-
+    
   env_kwargs = {
       "hmax": 100,
       "initial_amount": 1000000,
@@ -122,15 +120,10 @@ def main():
       "action_space": stock_dimension,
       "reward_scaling": 1e-4
   }
-
-
   e_train_gym = StockTradingEnv(df = train, **env_kwargs)
-
   env_train, _ = e_train_gym.get_sb_env()
   print(type(env_train))
-
   agent = DRLAgent(env = env_train)
-
   if_using_a2c = True
   if_using_ddpg = True
   if_using_ppo = True
