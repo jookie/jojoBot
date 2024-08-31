@@ -2,8 +2,7 @@
  <br>
  <img src="public/groqlabs-logo-black2.png" alt="AI StockBot" width="500">
  <br>
- <br>
- StockBot Powered by JojoFam: Lightning Fast AI Chatbot that Responds With Live Interactive Stock Charts, Financials, News, Screeners, and More 
+ Jojo has three layers: market environments, agents, and applications. For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
  <br>
 </h2>
 
@@ -19,8 +18,8 @@
 ## JojoFin
 JojoFin is library designed to facilitate financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for traderss to create, test, and implement trading dtrategis using DRL techniques.
 <br>
-[Demo of StockBot](https://github.com/user-attachments/assets/a50fa266-5ae9-4869-a37f-599d7db790d9)
-> Demo of StockBot providing relevant, live, and interactive stock charts and interfaces
+[Experiments of StockBot](READMExperiment.md)
+> Experiment of StockBot providing relevant, live, and interactive stock charts and interfaces
 
 ## Overview
 
