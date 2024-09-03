@@ -1,5 +1,6 @@
 from __future__ import annotations
-
+# /content/papertrading_erl/actor.pth
+# /content/papertrading_erl_retrain/actor.pth
 import warnings
 warnings.filterwarnings("ignore")
 import pandas as pd

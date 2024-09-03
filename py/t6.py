@@ -49,11 +49,6 @@ def main():
       TRADE_END_DATE,
   )
   check_and_make_directories([DATA_SAVE_DIR, TRAINED_MODEL_DIR, TENSORBOARD_LOG_DIR, RESULTS_DIR])
-  # from config.py, TRAIN_START_DATE is a string
-  TRAIN_START_DATE
-  # from config.py, TRAIN_END_DATE is a string
-  TRAIN_END_DATE
-  # from config.py, TRADE_START_DATE is a string 
   TRAIN_START_DATE = '2010-01-01'
   TRAIN_END_DATE = '2021-10-01'
   TRADE_START_DATE = '2021-10-01'

@@ -6,7 +6,11 @@ to decide which action to take once a day and the rest of the week based on resu
   TRADE_END_DATE = '2023-03-01'?
 
 
-Here's an example in Python that uses the results from your FINRL model and automatically executes trading actions using the Alpaca API. This example assumes you have already trained and backtested your model and now want to use the trained model to make real-time trading decisions.
+Make Example code that uses the results pretrained model your FINRL model and automatically executes trading actions using the Alpaca API. This example assumes you have already trained and backtested your model and now want to use the trained model to make real-time trading decisions.
+find a real world trading with finrl and alpaca and give me the code of the AlpacaPaperTrading class that uses these arguments:    (self,ticker_list, time_interval, drl_lib, agent, cwd, net_dim, 
+                 state_dim, action_dim, API_KEY, API_SECRET, 
+                 API_BASE_URL, tech_indicator_list, turbulence_thresh=30, 
+                 max_stock=1e2, latency = None):
 
 ### Example Overview
 - Load the trained model.
