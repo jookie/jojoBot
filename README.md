@@ -1,4 +1,11 @@
 # ChatGPT_Trading_Bot
+<h2 align="center">
+ <br>
+ <img src="public/groqlabs-logo-black2.png" alt="AI StockBot" width="500">
+ <br>
+ Jojo has three layers: market environments, agents, and applications. For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
+ <br>
+</h2>
 
 
 ## Overview
