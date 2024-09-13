@@ -6,6 +6,7 @@
 [PaperTrading](READMExpAlpacaPaperTrading.md) | 
 [FAQ](READMEfaq.md)
 </div>
+
 ## Introduction
 
 If you're tired staring at charts all day, and doing trades manually while exploring daily market data
