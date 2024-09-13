@@ -1,19 +1,12 @@
-<h2 align="center">
- <br>
- <img src="public/groqlabs-logo-black2.png" alt="AI StockBot" width="500">
- <br>
- Jojo has three layers: market environments, agents, and applications. For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
- <br>
-</h2>
+<br>
+<div align="center">
 
-<p align="center">
- <a href="#Overview">Overview</a> •
- <a href="#Features">Features</a> •
-  <a href="#Interfaces">Interfaces</a> •
- <a href="#Quickstart">Quickstart</a> •
- <a href="#Credits">Credits</a>
- <a href= "#Foudation">Foundation</a>
-</p>
+[Introduction](README) |
+[Trading Experiments](READMExperiment.md) |
+[SnapShot](READMECodeSnapShot.md) | 
+[PaperTrading](READMExpAlpacaPaperTrading.md) | 
+[FAQ](READMEfaq.md)
+</div>
 
 ## JojoFin
 JojoFin is library designed to facilitate financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for traderss to create, test, and implement trading dtrategis using DRL techniques.

@@ -1,9 +1,15 @@
+<div align="center">
 
-## Abstract
+[Introduction](README) |
+[Trading Experiments](READMExperiment.md) |
+[SnapShot](READMECodeSnapShot.md) | 
+[PaperTrading](READMExpAlpacaPaperTrading.md) | 
+[FAQ](READMEfaq.md)
+</div>
+## Introduction
 
 If you're tired staring at charts all day, and doing trades manually while exploring daily market data
 just relax and let the bot do all the hard work.
-
 This Trading-bot operates 24/7, ensuring no trading opportunities are missed. An AI JOJO Trading Bot offers the benefits of automated trading without needing constant attention, giving regular investors a chance for higher returns. 
 The name of the AI trading bot is JojoFin. It is like having an automatic helper that trades for you 24/7 based on set rules, quickly making lots of small trades to profit from market changes, while traditional investing involves buying assets and holding them for a long time with less frequent trades and lower risk.
 ## Reinforcement Learning (RL)
@@ -11,14 +17,14 @@ Reinforcement Learning (RL) techniques are considered convenient for this task :
 In this experiment, we present an RL environment for the portfolio optimization based on state-of-the-art mathematical formulations. The environment aims to be easy-to-use, very customizable, and have integrations with modern RL frameworks.
 Jojobot is a library that will allow you to easily create trading robots that are profitable in many different asset classes, including Stocks, Options, Futures, FOREX, and more. 
 Check your trading strategies against historical data to make sure they are profitable before you invest in them. JojoBot makes it easy for you to do  (backtest) your trading strategies and easily convert them to algorithmic trading robots.
-
+<br>
 KeyWords: Portfolio optimization, Reinforcement learning, Simulation environment, Quantitative finance
-
+<br>
 ## Overview
 1. Pull 30 days of trading data for (Insert your stock or crypto) with Yahoo Finance Downloader API
-2. Create a simulated trading environment using real trading data with FinRL
-3. Train an neural network to predict that Stock Price using reinforcement learning inside this simulation with FinRL
-4. Once trained, backtest the predictions on the past 30 days data to compute potential returns with FinRL
+2. Create a simulated trading environment using real trading data 
+3. Train an neural network to predict that Stock Price using reinforcement learning inside this simulation
+4. Once trained, backtest the predictions on the past 30 days data to compute potential returns 
 5. If the expe
 
 ## Task Discription

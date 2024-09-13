@@ -1,4 +1,20 @@
-To create an example code that uses a pretrained FINRL model to automatically execute trading actions using the Alpaca API, we can start by defining the `AlpacaPaperTrading` class that accepts the specified arguments. This class will handle interactions with the Alpaca API, such as retrieving current stock prices, making buy/sell decisions based on the model's predictions, and executing trades.
+<div align="center">
+
+[Introduction](README) |
+[Trading Experiments](READMExperiment.md) |
+[SnapShot](READMECodeSnapShot.md) | 
+[FAQ](READMEfaq.md) |
+[SnapShot](READMECodeSnapShot.md) | 
+</div>
+
+To create an example code that uses a pretrained model to automatically execute trading actions using the Alpaca API, we can start by defining the `AlpacaPaperTrading` class that accepts the specified arguments. This class will handle interactions with the Alpaca API, such as retrieving current stock prices, making buy/sell decisions based on the model's predictions, and executing trades.
+
+This example assumes you have already trained and backtested your model and now want to use the trained model to make real-time trading decisions.
+find a real world trading with finrl and alpaca and give me the code of the AlpacaPaperTrading class that uses these arguments:    (self,ticker_list, time_interval, drl_lib, agent, cwd, net_dim, 
+                 state_dim, action_dim, API_KEY, API_SECRET, 
+                 API_BASE_URL, tech_indicator_list, turbulence_thresh=30, 
+                 max_stock=1e2, latency = None):
+
 
 ### Example Code for `AlpacaPaperTrading` Class:
 
@@ -7,6 +23,95 @@ import alpaca_trade_api as tradeapi
 import pandas as pd
 import numpy as np
 import time
+
+
+### Example Overview
+- Load the trained model.
+- Retrieve current market data from Alpaca.
+- Use the model to predict today's actions.
+- Execute the predicted actions via Alpaca's API.
+
+### Requirements
+You’ll need to have the following Python packages installed:
+- `finrl` for your trained model.
+- `alpaca-trade-api` to interact with Alpaca.
+
+### Example Code
+
+```python
+import pandas as pd
+import datetime
+from finrl.meta.env_stock_trading.env_stocktrading import StockTradingEnv
+from finrl.config import INDICATORS
+from finrl.meta.data_processors import AlpacaProcessor
+from alpaca_trade_api.rest import REST, TimeFrame
+
+# Alpaca API credentials
+ALPACA_API_KEY = 'your_alpaca_api_key'
+ALPACA_SECRET_KEY = 'your_alpaca_secret_key'
+ALPACA_BASE_URL = 'https://paper-api.alpaca.markets'
+
+# Alpaca API setup
+alpaca = REST(ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_BASE_URL, api_version='v2')
+
+# Load the trained model
+trained_model = ...  # Load your trained model here (e.g., using pickle or other methods)
+
+# Define your trading environment
+env_config = {
+    'stock_dim': 1,  # Number of stocks in your portfolio
+    'hmax': 100,  # Max number of shares to trade
+    'initial_amount': 100000,  # Initial capital
+    'buy_cost_pct': 0.001,  # Transaction cost for buying
+    'sell_cost_pct': 0.001,  # Transaction cost for selling
+    'reward_scaling': 1e-4,  # Scaling factor for reward
+    'state_space': 1 + len(INDICATORS) * 1,  # State space dimension
+    'action_space': 1,  # Action space dimension
+    'tech_indicator_list': INDICATORS,
+    'print_verbosity': 1,
+    'day': 0,
+    'initial': True,
+    'model_name': 'a2c',
+    'mode': 'trade',
+    'iteration': 10
+}
+
+env = StockTradingEnv(df=pd.DataFrame(), **env_config)
+
+# Define the stock to trade
+stock = 'AAPL'
+
+# Retrieve current market data from Alpaca
+end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+start_date = (datetime.datetime.now() - datetime.timedelta(days=30)).strftime('%Y-%m-%d')
+market_data = alpaca.get_barset(stock, TimeFrame.Day, start=start_date, end=end_date).df
+
+# Prepare data for prediction
+data = market_data[stock].copy()
+data['date'] = data.index
+data = data[['date', 'open', 'high', 'low', 'close', 'volume']]
+env.df = data
+
+# Predict today's action
+state = env.reset()
+action = trained_model.predict(state)[0]  # Predict the action
+
+# Execute the action via Alpaca API
+if action > 0:
+    # Buy signal
+    print(f"Buying {abs(action)} shares of {stock}")
+    alpaca.submit_order(symbol=stock, qty=abs(action), side='buy', type='market', time_in_force='day')
+elif action < 0:
+    # Sell signal
+    print(f"Selling {abs(action)} shares of {stock}")
+    alpaca.submit_order(symbol=stock, qty=abs(action), side='sell', type='market', time_in_force='day')
+else:
+    print(f"Holding {stock} today")
+
+# Repeat this daily or at intervals using a scheduler (like cron job) to automate
+```
+
+
 
 class AlpacaPaperTrading:
     def __init__(self, ticker_list, time_interval, drl_lib, agent, cwd, net_dim, 
