@@ -1,10 +1,17 @@
 <div align="center">
+<div align="center">
+<h2>
 
-[Stable Base Line+DOW](StableBasdelineDowJones.md)
-[Introduction](OVERVIEW) |
-[SnapShot](READMECodeSnapShot.md) | 
+[Introduction](../../README.md) |
+[DOW Stable Base Line](StableBasdelineDowJones.md) |
+[OverView](OverView.md) |
 [PaperTrading](READMExpAlpacaPaperTrading.md) | 
-[FAQ](READMEfaq.md)
+[Trading Experiments](READMExperiment.md) |
+[FAQ](READMEfaq.md) | 
+[SnapShot](READMECodeSnapShot.md) 
+
+</h2>
+</div>
 </div>
 
 ## Introduction

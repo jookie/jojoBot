@@ -1,12 +1,17 @@
 
 <br>
 <div align="center">
+<h2>
 
-[Stable Base Line DOW](StableBasdelineDowJones.md)
-[Introduction]() |
+[Introduction](../../README.md) |
+[DOW Stable Base Line](StableBasdelineDowJones.md) |
+[OverView](OverView.md) |
+[PaperTrading](READMExpAlpacaPaperTrading.md) | 
 [Trading Experiments](READMExperiment.md) |
-[SnapShot](READMECodeSnapShot.md) | 
-[SnapShot](READMECodeSnapShot.md) | 
+[FAQ](READMEfaq.md) | 
+[SnapShot](READMECodeSnapShot.md) 
+
+</h2>
 </div>
 
 ### How It Works:

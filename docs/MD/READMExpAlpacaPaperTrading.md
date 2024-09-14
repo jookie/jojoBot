@@ -1,13 +1,16 @@
 <div align="center">
+<h2>
 
-[Stable Base Line+DOW](StableBasdelineDowJones.md)
-[Introduction](OVERVIEW) |
+[Introduction](../../README.md) |
+[DOW Stable Base Line](StableBasdelineDowJones.md) |
+[OverView](OverView.md) |
+[PaperTrading](READMExpAlpacaPaperTrading.md) | 
 [Trading Experiments](READMExperiment.md) |
-[SnapShot](READMECodeSnapShot.md) | 
-[FAQ](READMEfaq.md) |
-[SnapShot](READMECodeSnapShot.md) | 
-</div>
+[FAQ](READMEfaq.md) | 
+[SnapShot](READMECodeSnapShot.md) 
 
+</h2>
+</div>
 To create an example code that uses a pretrained model to automatically execute trading actions using the Alpaca API, we can start by defining the `AlpacaPaperTrading` class that accepts the specified arguments. This class will handle interactions with the Alpaca API, such as retrieving current stock prices, making buy/sell decisions based on the model's predictions, and executing trades.
 
 This example assumes you have already trained and backtested your model and now want to use the trained model to make real-time trading decisions.

@@ -1,13 +1,17 @@
 <br>
 <div align="center">
+<h2>
 
-[Stable Base Line+DOW](StableBasdelineDowJones.md)
-[Introduction](OVERVIEW) |
-[Experiments](READMExperiment.md) |
+[Introduction](../../README.md) |
+[DOW Stable Base Line](StableBasdelineDowJones.md) |
+[OverView](OverView.md) |
 [PaperTrading](READMExpAlpacaPaperTrading.md) | 
-[FAQ](READMEfaq.md)
-</div>
+[Trading Experiments](READMExperiment.md) |
+[FAQ](READMEfaq.md) | 
+[SnapShot](READMECodeSnapShot.md) 
 
+</h2>
+</div>
 ## JojoFin
 JojoFin is library designed to facilitate financial trading strategies using deep reinforcement learning (DRL). It is tailored specifically for quantitative finance, providing tools and frameworks for traderss to create, test, and implement trading dtrategis using DRL techniques.
 <br>
