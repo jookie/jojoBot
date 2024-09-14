@@ -5,7 +5,6 @@
 [Introduction](README) |
 [Trading Experiments](READMExperiment.md) |
 [SnapShot](READMECodeSnapShot.md) | 
-[FAQ](READMEfaq.md) |
 [SnapShot](READMECodeSnapShot.md) | 
 </div>
 

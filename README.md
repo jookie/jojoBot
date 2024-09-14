@@ -1,7 +1,7 @@
 <div align="center">
 <h2>
 
-[Trading Experiments](READMExperiment.md) |
+[Experiments](READMExperiment.md) |
 [SnapShot](READMECodeSnapShot.md) | 
 [PaperTrading](READMExpAlpacaPaperTrading.md) | 
 [FAQ](READMEfaq.md)
