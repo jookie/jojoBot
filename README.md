@@ -1,11 +1,11 @@
 <div align="center">
 <h2>
 
-[Stable Base Line DOW](/docs/MD/StableBasdelineDowJones.md) |
+[DOW Stable Base Line](/docs/MD/StableBasdelineDowJones.md) |
 [Trading Experiments](/docs/MD/READMExperiment.md) |
-[SnapShot](/docs/MD/READMECodeSnapShot.md) | 
 [PaperTrading](/docs/MD/READMExpAlpacaPaperTrading.md) | 
-[FAQ](/docs/MD/READMEfaq.md)
+[FAQ](/docs/MD/READMEfaq.md) | 
+[SnapShot](/docs/MD/READMECodeSnapShot.md) 
 
 </h2>
 </div>
