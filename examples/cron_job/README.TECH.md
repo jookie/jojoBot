@@ -108,27 +108,27 @@ FinRL
 │   	└── test_alpaca_downloader.py
 ├── setup.py
 ├── requirements.txt
-└── README.md
+└── OVERVIEW.md
 ```
 
 ## Supported Data Sources
 
-|Data Source |Type |Range and Frequency |Request Limits|Raw Data|Preprocessed Data|
-|  ----  |  ----  |  ----  |  ----  |  ----  |  ----  |
-|[Akshare](https://alpaca.markets/docs/introduction/)| CN Securities| 2015-now, 1day| Account-specific| OHLCV| Prices&Indicators|
-|[Alpaca](https://alpaca.markets/docs/introduction/)| US Stocks, ETFs| 2015-now, 1min| Account-specific| OHLCV| Prices&Indicators|
-|[Baostock](http://baostock.com/baostock/index.php/Python_API%E6%96%87%E6%A1%A3)| CN Securities| 1990-12-19-now, 5min| Account-specific| OHLCV| Prices&Indicators|
-|[Binance](https://binance-docs.github.io/apidocs/spot/en/#public-api-definitions)| Cryptocurrency| API-specific, 1s, 1min| API-specific| Tick-level daily aggegrated trades, OHLCV| Prices&Indicators|
-|[CCXT](https://docs.ccxt.com/en/latest/manual.html)| Cryptocurrency| API-specific, 1min| API-specific| OHLCV| Prices&Indicators|
-|[EODhistoricaldata](https://eodhistoricaldata.com/financial-apis/)| US Securities| Frequency-specific, 1min| API-specific | OHLCV | Prices&Indicators|
-|[IEXCloud](https://iexcloud.io/docs/api/)| NMS US securities|1970-now, 1 day|100 per second per IP|OHLCV| Prices&Indicators|
-|[JoinQuant](https://www.joinquant.com/)| CN Securities| 2005-now, 1min| 3 requests each time| OHLCV| Prices&Indicators|
-|[QuantConnect](https://www.quantconnect.com/docs/home/home)| US Securities| 1998-now, 1s| NA| OHLCV| Prices&Indicators|
-|[RiceQuant](https://www.ricequant.com/doc/rqdata/python/)| CN Securities| 2005-now, 1ms| Account-specific| OHLCV| Prices&Indicators|
-[Sinopac](https://sinotrade.github.io/zh_TW/tutor/prepare/terms/) | Taiwan securities | 2023-04-13~now, 1min | Account-specific | OHLCV | Prices&Indicators|
-|[Tushare](https://tushare.pro/document/1?doc_id=131)| CN Securities, A share| -now, 1 min| Account-specific| OHLCV| Prices&Indicators|
-|[WRDS](https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/nyse-trade-and-quote-taq/)| US Securities| 2003-now, 1ms| 5 requests each time| Intraday Trades|Prices&Indicators|
-|[YahooFinance](https://pypi.org/project/yfinance/)| US Securities| Frequency-specific, 1min| 2,000/hour| OHLCV | Prices&Indicators|
+| Data Source                                                                                   | Type                   | Range and Frequency      | Request Limits        | Raw Data                                  | Preprocessed Data |
+| --------------------------------------------------------------------------------------------- | ---------------------- | ------------------------ | --------------------- | ----------------------------------------- | ----------------- |
+| [Akshare](https://alpaca.markets/docs/introduction/)                                          | CN Securities          | 2015-now, 1day           | Account-specific      | OHLCV                                     | Prices&Indicators |
+| [Alpaca](https://alpaca.markets/docs/introduction/)                                           | US Stocks, ETFs        | 2015-now, 1min           | Account-specific      | OHLCV                                     | Prices&Indicators |
+| [Baostock](http://baostock.com/baostock/index.php/Python_API%E6%96%87%E6%A1%A3)               | CN Securities          | 1990-12-19-now, 5min     | Account-specific      | OHLCV                                     | Prices&Indicators |
+| [Binance](https://binance-docs.github.io/apidocs/spot/en/#public-api-definitions)             | Cryptocurrency         | API-specific, 1s, 1min   | API-specific          | Tick-level daily aggegrated trades, OHLCV | Prices&Indicators |
+| [CCXT](https://docs.ccxt.com/en/latest/manual.html)                                           | Cryptocurrency         | API-specific, 1min       | API-specific          | OHLCV                                     | Prices&Indicators |
+| [EODhistoricaldata](https://eodhistoricaldata.com/financial-apis/)                            | US Securities          | Frequency-specific, 1min | API-specific          | OHLCV                                     | Prices&Indicators |
+| [IEXCloud](https://iexcloud.io/docs/api/)                                                     | NMS US securities      | 1970-now, 1 day          | 100 per second per IP | OHLCV                                     | Prices&Indicators |
+| [JoinQuant](https://www.joinquant.com/)                                                       | CN Securities          | 2005-now, 1min           | 3 requests each time  | OHLCV                                     | Prices&Indicators |
+| [QuantConnect](https://www.quantconnect.com/docs/home/home)                                   | US Securities          | 1998-now, 1s             | NA                    | OHLCV                                     | Prices&Indicators |
+| [RiceQuant](https://www.ricequant.com/doc/rqdata/python/)                                     | CN Securities          | 2005-now, 1ms            | Account-specific      | OHLCV                                     | Prices&Indicators |
+| [Sinopac](https://sinotrade.github.io/zh_TW/tutor/prepare/terms/)                             | Taiwan securities      | 2023-04-13~now, 1min     | Account-specific      | OHLCV                                     | Prices&Indicators |
+| [Tushare](https://tushare.pro/document/1?doc_id=131)                                          | CN Securities, A share | -now, 1 min              | Account-specific      | OHLCV                                     | Prices&Indicators |
+| [WRDS](https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/nyse-trade-and-quote-taq/) | US Securities          | 2003-now, 1ms            | 5 requests each time  | Intraday Trades                           | Prices&Indicators |
+| [YahooFinance](https://pypi.org/project/yfinance/)                                            | US Securities          | Frequency-specific, 1min | 2,000/hour            | OHLCV                                     | Prices&Indicators |
 
 
 OHLCV: open, high, low, and close prices; volume. adjusted_close: adjusted close price
@@ -174,14 +174,14 @@ We used the Deep Q-Learning based recommendation framework that considers curren
 <details>
 <summary>Click to view publications</summary>
 
-| Title | Conference/Journal | Link | Citations | Year |
-|-------|-------------------|------|-----------|------|
-| Dynamic Datasets and Market Environments for Financial Reinforcement Learning | Machine Learning - Springer Nature | [paper](https://arxiv.org/abs/2304.13174) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta) | 7 | 2024 |
-| **FinRL-Meta**: FinRL-Meta: Market Environments and Benchmarks for Data-Driven Financial Reinforcement Learning | NeurIPS 2022 | [paper](https://arxiv.org/abs/2211.03107) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta) | 37 | 2022 |
-| **FinRL**: Deep reinforcement learning framework to automate trading in quantitative finance | ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3955949) | 49 | 2021 |
-| **FinRL**: A deep reinforcement learning library for automated stock trading in quantitative finance | NeurIPS 2020 Deep RL Workshop | [paper](https://arxiv.org/abs/2011.09607) | 87 | 2020 |
-| Deep reinforcement learning for automated stock trading: An ensemble strategy | ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154 | 2020 |
-| Practical deep reinforcement learning approach for stock trading | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services | [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples)) | 164 | 2018 |
+| Title                                                                                                           | Conference/Journal                                                                 | Link                                                                                                                                                                                                                                                 | Citations | Year |
+| --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---- |
+| Dynamic Datasets and Market Environments for Financial Reinforcement Learning                                   | Machine Learning - Springer Nature                                                 | [paper](https://arxiv.org/abs/2304.13174) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta)                                                                                                                                                | 7         | 2024 |
+| **FinRL-Meta**: FinRL-Meta: Market Environments and Benchmarks for Data-Driven Financial Reinforcement Learning | NeurIPS 2022                                                                       | [paper](https://arxiv.org/abs/2211.03107) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta)                                                                                                                                                | 37        | 2022 |
+| **FinRL**: Deep reinforcement learning framework to automate trading in quantitative finance                    | ACM International Conference on AI in Finance (ICAIF)                              | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3955949)                                                                                                                                                                                 | 49        | 2021 |
+| **FinRL**: A deep reinforcement learning library for automated stock trading in quantitative finance            | NeurIPS 2020 Deep RL Workshop                                                      | [paper](https://arxiv.org/abs/2011.09607)                                                                                                                                                                                                            | 87        | 2020 |
+| Deep reinforcement learning for automated stock trading: An ensemble strategy                                   | ACM International Conference on AI in Finance (ICAIF)                              | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154       | 2020 |
+| Practical deep reinforcement learning approach for stock trading                                                | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services | [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples))                                                              | 164       | 2018 |
 
 </details>
 

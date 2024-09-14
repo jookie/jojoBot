@@ -55,16 +55,16 @@ The Alpaca SDK will check the environment for a number of variables that can be 
 Alternatively you could pass the credentials directly to the SDK instances.
 
 
-| Environment                      | default                                                                                | Description                                                                                                            |
-| -------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| APCA_API_KEY_ID=<key_id>         |                                                                                        | Your API Key                                                                                                           |
-| APCA_API_SECRET_KEY=<secret_key> |                                                                                        | Your API Secret Key                                                                                                    |
-| APCA_API_BASE_URL=url            | https://api.alpaca.markets (for live) | Specify the URL for API calls, *Default is live, you must specify <br/>https://paper-api.alpaca.markets to switch to paper endpoint!*                   |
-| APCA_API_DATA_URL=url            | https://data.alpaca.markets                                                            | Endpoint for data API                                                                                                  |
-| APCA_RETRY_MAX=3                 | 3                                                                                      | The number of subsequent API calls to retry on timeouts                                                                |
-| APCA_RETRY_WAIT=3                | 3                                                                                      | seconds to wait between each retry attempt                                                                             |
-| APCA_RETRY_CODES=429,504         | 429,504                                                                                | comma-separated HTTP status code for which retry is attempted                                                          |
-| DATA_PROXY_WS                    |                                                                                        | When using the alpaca-proxy-agent you need to set this environment variable as described ![here](https://github.com/shlomikushchi/alpaca-proxy-agent) |
+| Environment                      | default                               | Description                                                                                                                                           |
+| -------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| APCA_API_KEY_ID=<key_id>         |                                       | Your API Key                                                                                                                                          |
+| APCA_API_SECRET_KEY=<secret_key> |                                       | Your API Secret Key                                                                                                                                   |
+| APCA_API_BASE_URL=url            | https://api.alpaca.markets (for live) | Specify the URL for API calls, *Default is live, you must specify <br/>https://paper-api.alpaca.markets to switch to paper endpoint!*                 |
+| APCA_API_DATA_URL=url            | https://data.alpaca.markets           | Endpoint for data API                                                                                                                                 |
+| APCA_RETRY_MAX=3                 | 3                                     | The number of subsequent API calls to retry on timeouts                                                                                               |
+| APCA_RETRY_WAIT=3                | 3                                     | seconds to wait between each retry attempt                                                                                                            |
+| APCA_RETRY_CODES=429,504         | 429,504                               | comma-separated HTTP status code for which retry is attempted                                                                                         |
+| DATA_PROXY_WS                    |                                       | When using the alpaca-proxy-agent you need to set this environment variable as described ![here](https://github.com/shlomikushchi/alpaca-proxy-agent) |
 
 ## Working with Data
 ### Historic Data
@@ -344,7 +344,7 @@ You can access the following information through this object.
 #### API REST Methods
 
 | Rest Method                                                                                                                                                                                                                                      | End Point                          | Result                                                                                                                       |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | get_account()                                                                                                                                                                                                                                    | `GET /account` and                 | `Account` entity.                                                                                                            |
 | get_order_by_client_order_id(client_order_id)                                                                                                                                                                                                    | `GET /orders` with client_order_id | `Order` entity.                                                                                                              |
 | list_orders(status=None, limit=None, after=None, until=None, direction=None, params=None,nested=None, symbols=None, side=None)                                                                                                                   | `GET /orders`                      | list of `Order` entities. `after` and `until` need to be string format, which you can obtain by `pd.Timestamp().isoformat()` |
@@ -430,7 +430,7 @@ The base version of this library only allows running a single algorithm due to A
 
 The steps to execute this are:
 
-* Run the Alpaca Proxy Agent as described in the project's README
+* Run the Alpaca Proxy Agent as described in the project's OVERVIEW
 * Define a new environment variable: `DATA_PROXY_WS` set to the address of the proxy agent. (e.g: `DATA_PROXY_WS=ws://127.0.0.1:8765`)
 * If you are using the Alpaca data stream, make sure to initiate the Stream object with the container's url: `data_url='http://127.0.0.1:8765'`
 * Execute your algorithm. It will connect to the Alpaca servers through the proxy agent, allowing you to execute multiple strategies

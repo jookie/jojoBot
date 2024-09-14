@@ -1,11 +1,10 @@
 <div align="center">
 <h2>
 
-[Stable Base Line+DOW](MD/StableBasdelineDowJones.md)
-[Trading Experiments](MD/READMExperiment.md) |
-[SnapShot](MD/READMECodeSnapShot.md) | 
-[PaperTrading](MD/READMExpAlpacaPaperTrading.md) | 
-[FAQ](MD/READMEfaq.md)
+[Trading Experiments](READMExperiment.md) |
+[SnapShot](READMECodeSnapShot.md) | 
+[PaperTrading](READMExpAlpacaPaperTrading.md) | 
+[FAQ](READMEfaq.md)
 
 </h2>
 </div>
@@ -17,27 +16,6 @@
  <br>
  </h2>
  JojoFin with  the three layers: market environments, agents, and applications. For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
-<br>
-
-<div align="center">
-
-[Introduction](OVERVIEW) |
-[SnapShot](READMECodeSnapShot.md) | 
-[PaperTrading](READMExpAlpacaPaperTrading.md) | 
-[FAQ](READMEfaq.md)
-</div>
-
-## Introduction
-
-If you're tired staring at charts all day, and doing trades manually while exploring daily market data
-just relax and let the bot do all the hard work.
-This Trading-bot operates 24/7, ensuring no trading opportunities are missed. An AI JOJO Trading Bot offers the benefits of automated trading without needing constant attention, giving regular investors a chance for higher returns. 
-The name of the AI trading bot is JojoFin. It is like having an automatic helper that trades for you 24/7 based on set rules, quickly making lots of small trades to profit from market changes, while traditional investing involves buying assets and holding them for a long time with less frequent trades and lower risk.
-## Reinforcement Learning (RL)
-Reinforcement Learning (RL) techniques are considered convenient for this task : 
-In this experiment, we present an RL environment for the portfolio optimization based on state-of-the-art mathematical formulations. The environment aims to be easy-to-use, very customizable, and have integrations with modern RL frameworks.
-Jojobot is a library that will allow you to easily create trading robots that are profitable in many different asset classes, including Stocks, Options, Futures, FOREX, and more. 
-Check your trading strategies against historical data to make sure they are profitable before you invest in them. JojoBot makes it easy for you to do  (backtest) your trading strategies and easily convert them to algorithmic trading robots.
 <br>
 
 ## Experiment Overview

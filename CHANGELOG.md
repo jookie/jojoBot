@@ -13,7 +13,7 @@ Add annotations to chart widget, add vercel deploy button, clean dependencies
 
 ### Changed
 
-- README.md
+- OVERVIEW.md
 - components/tradingview/stock-chart.tsx
 - package.json
 - pnpm-lock.yaml

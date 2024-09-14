@@ -1,7 +1,8 @@
 <br>
 <div align="center">
 
-[Introduction](README) |
+[Stable Base Line+DOW](StableBasdelineDowJones.md)
+[Introduction](OVERVIEW) |
 [Experiments](READMExperiment.md) |
 [PaperTrading](READMExpAlpacaPaperTrading.md) | 
 [FAQ](READMEfaq.md)
@@ -27,12 +28,12 @@ StockBot is an AI-powered chatbot that leverages Llama3 70b on JojoFam, Vercelâ€
 
 Examples for Stocks, Options, and Crypto in the notebooks provided below. Open them in Google Colab to jumpstart your journey! 
 
-| Notebooks                                                                                |                                                                                                       Open in Google Colab                                                                                                       |
-| :--------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [Stocks Orders](stocks-trading-basic.ipynb)         |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/stocks-trading-basic.ipynb)   |
-| [Options Orders](options-trading-basic.ipynb)                   |     [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/options-trading-basic.ipynb)      |
-| [Crypto Orders](crypto-trading-basic.ipynb)                                   |         [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/crypto-trading-basic.ipynb)          |
-| [Stock Trading](api/tradingBot.ipynb)                                   |         [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](api/tradingBot.ipynb)          |
+| Notebooks                                     |                                                                                    Open in Google Colab                                                                                    |
+| :-------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [Stocks Orders](stocks-trading-basic.ipynb)   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/stocks-trading-basic.ipynb)  |
+| [Options Orders](options-trading-basic.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/options-trading-basic.ipynb) |
+| [Crypto Orders](crypto-trading-basic.ipynb)   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/crypto-trading-basic.ipynb)  |
+| [Stock Trading](api/tradingBot.ipynb)         |                                                 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](api/tradingBot.ipynb)                                                 |
 
 ## Features
 
@@ -46,17 +47,17 @@ Examples for Stocks, Options, and Crypto in the notebooks provided below. Open t
 <details>
 <summary>Click to view Interfaces</summary>
 
-| Description | Widget |
-|-------------|--------|
-| **Heatmap of Daily Market Performance**<br>Visualize market trends at a glance with an interactive heatmap. | ![Heatmap of Daily Market Performance](https://github.com/user-attachments/assets/2e3919a3-280b-4be4-adcd-a1ff636bff3e) |
-| **Breakdown of Financial Data for Stocks**<br>Get detailed financial metrics and key performance indicators for any stock. | ![Breakdown of Financial Data for Stocks](https://github.com/user-attachments/assets/c1c32dac-8295-4efb-ac1e-2eea8a89e7db) |
-| **Price History of Stock**<br>Track the historical price movement of stocks with customizable date ranges. | ![Price History of Stock](https://github.com/user-attachments/assets/f588068e-4d95-4188-96fd-866d355c993e) |
-| **Candlestick Stock Charts for Specific Assets**<br>Analyze price patterns and trends with detailed candlestick charts. | ![Candlestick Stock Charts for Specific Assets](https://github.com/user-attachments/assets/ce9ea4a8-a1fe-4ce7-be60-3f5d64d50ced) |
-| **Top Stories for Specific Stock**<br>Stay informed with the latest news and headlines affecting specific companies. | ![Top Stories for Specific Stock](https://github.com/user-attachments/assets/fa0693f4-8eca-4d5c-90e7-42afda0d8acc) |
-| **Market Overview**<br>Shows an overview of today's stock, futures, bond, and forex market performance including change values, Open, High, Low, and Close values. | ![Market Overview](https://github.com/user-attachments/assets/79048f3b-9153-41f9-8de5-6b3d45f331dd) |
-| **Stock Screener to Find New Stocks and ETFs**<br>Discover new companies with a stock screening tool. | ![Stock Screener to Find New Stocks and ETFs](https://github.com/user-attachments/assets/8ecadec9-69a1-4e18-a9fe-7b30df9f6ff5) |
-| **Trending Stocks**<br>Shows the top five gaining, losing, and most active stocks for the day. | ![Trending Stocks](https://github.com/user-attachments/assets/848c1ebf-7828-4116-a041-6f0ba7156bd5) |
-| **ETF Heatmap**<br>Shows a heatmap of today's ETF market performance across sectors and asset classes. | ![ETF Heatmap](https://github.com/user-attachments/assets/cb2b29d9-acb7-4c8f-90c7-0390e72907f6) |
+| Description                                                                                                                                                        | Widget                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Heatmap of Daily Market Performance**<br>Visualize market trends at a glance with an interactive heatmap.                                                        | ![Heatmap of Daily Market Performance](https://github.com/user-attachments/assets/2e3919a3-280b-4be4-adcd-a1ff636bff3e)          |
+| **Breakdown of Financial Data for Stocks**<br>Get detailed financial metrics and key performance indicators for any stock.                                         | ![Breakdown of Financial Data for Stocks](https://github.com/user-attachments/assets/c1c32dac-8295-4efb-ac1e-2eea8a89e7db)       |
+| **Price History of Stock**<br>Track the historical price movement of stocks with customizable date ranges.                                                         | ![Price History of Stock](https://github.com/user-attachments/assets/f588068e-4d95-4188-96fd-866d355c993e)                       |
+| **Candlestick Stock Charts for Specific Assets**<br>Analyze price patterns and trends with detailed candlestick charts.                                            | ![Candlestick Stock Charts for Specific Assets](https://github.com/user-attachments/assets/ce9ea4a8-a1fe-4ce7-be60-3f5d64d50ced) |
+| **Top Stories for Specific Stock**<br>Stay informed with the latest news and headlines affecting specific companies.                                               | ![Top Stories for Specific Stock](https://github.com/user-attachments/assets/fa0693f4-8eca-4d5c-90e7-42afda0d8acc)               |
+| **Market Overview**<br>Shows an overview of today's stock, futures, bond, and forex market performance including change values, Open, High, Low, and Close values. | ![Market Overview](https://github.com/user-attachments/assets/79048f3b-9153-41f9-8de5-6b3d45f331dd)                              |
+| **Stock Screener to Find New Stocks and ETFs**<br>Discover new companies with a stock screening tool.                                                              | ![Stock Screener to Find New Stocks and ETFs](https://github.com/user-attachments/assets/8ecadec9-69a1-4e18-a9fe-7b30df9f6ff5)   |
+| **Trending Stocks**<br>Shows the top five gaining, losing, and most active stocks for the day.                                                                     | ![Trending Stocks](https://github.com/user-attachments/assets/848c1ebf-7828-4116-a041-6f0ba7156bd5)                              |
+| **ETF Heatmap**<br>Shows a heatmap of today's ETF market performance across sectors and asset classes.                                                             | ![ETF Heatmap](https://github.com/user-attachments/assets/cb2b29d9-acb7-4c8f-90c7-0390e72907f6)                                  |
 </details>
 <response>
 
@@ -64,14 +65,14 @@ Examples for Stocks, Options, and Crypto in the notebooks provided below. Open t
 <details>
 <summary>Click to view publications</summary>
 
-| Title | Conference/Journal | Link | Citations | Year |
-|-------|-------------------|------|-----------|------|
-| Dynamic Datasets and Market Environments for Financial Reinforcement Learning | Machine Learning - Springer Nature | [paper](https://arxiv.org/abs/2304.13174) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta) | 7 | 2024 |
-| **FinRL-Meta**: FinRL-Meta: Market Environments and Benchmarks for Data-Driven Financial Reinforcement Learning | NeurIPS 2022 | [paper](https://arxiv.org/abs/2211.03107) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta) | 37 | 2022 |
-| **FinRL**: Deep reinforcement learning framework to automate trading in quantitative finance | ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3955949) | 49 | 2021 |
-| **FinRL**: A deep reinforcement learning library for automated stock trading in quantitative finance | NeurIPS 2020 Deep RL Workshop | [paper](https://arxiv.org/abs/2011.09607) | 87 | 2020 |
-| Deep reinforcement learning for automated stock trading: An ensemble strategy | ACM International Conference on AI in Finance (ICAIF) | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154 | 2020 |
-| Practical deep reinforcement learning approach for stock trading | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services | [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples)) | 164 | 2018 |
+| Title                                                                                                           | Conference/Journal                                                                 | Link                                                                                                                                                                                                                                                 | Citations | Year |
+| --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---- |
+| Dynamic Datasets and Market Environments for Financial Reinforcement Learning                                   | Machine Learning - Springer Nature                                                 | [paper](https://arxiv.org/abs/2304.13174) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta)                                                                                                                                                | 7         | 2024 |
+| **FinRL-Meta**: FinRL-Meta: Market Environments and Benchmarks for Data-Driven Financial Reinforcement Learning | NeurIPS 2022                                                                       | [paper](https://arxiv.org/abs/2211.03107) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta)                                                                                                                                                | 37        | 2022 |
+| **FinRL**: Deep reinforcement learning framework to automate trading in quantitative finance                    | ACM International Conference on AI in Finance (ICAIF)                              | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3955949)                                                                                                                                                                                 | 49        | 2021 |
+| **FinRL**: A deep reinforcement learning library for automated stock trading in quantitative finance            | NeurIPS 2020 Deep RL Workshop                                                      | [paper](https://arxiv.org/abs/2011.09607)                                                                                                                                                                                                            | 87        | 2020 |
+| Deep reinforcement learning for automated stock trading: An ensemble strategy                                   | ACM International Conference on AI in Finance (ICAIF)                              | [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) [code](https://github.com/AI4Finance-Foundation/FinRL-Meta/blob/master/tutorials/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb) | 154       | 2020 |
+| Practical deep reinforcement learning approach for stock trading                                                | NeurIPS 2018 Workshop on Challenges and Opportunities for AI in Financial Services | [paper](https://arxiv.org/abs/1811.07522) [code](https://github.com/AI4Finance-Foundation/DQN-DDPG_Stock_Trading](https://github.com/AI4Finance-Foundation/FinRL/tree/master/examples))                                                              | 164       | 2018 |
 </details>
 </response>
 
