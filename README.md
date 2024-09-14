@@ -1,16 +1,16 @@
 <div align="center">
 <h2>
 
-[Stable Base Line+DOW](MD/StableBasdelineDowJones.md)
-[Trading Experiments](MD/READMExperiment.md) |
-[SnapShot](MD/READMECodeSnapShot.md) | 
-[PaperTrading](MD/READMExpAlpacaPaperTrading.md) | 
-[FAQ](MD/READMEfaq.md)
+[Stable Base Line DOW](/docs/MD/StableBasdelineDowJones.md) |
+[Trading Experiments](/docs/MD/READMExperiment.md) |
+[SnapShot](/docs/MD/READMECodeSnapShot.md) | 
+[PaperTrading](/docs/MD/READMExpAlpacaPaperTrading.md) | 
+[FAQ](/docs/MD/READMEfaq.md)
 
 </h2>
 </div>
 
-# ChatGPT_Trading_Bot
+# Renforced Learning Trading Bot
 <h2 align="center">
  <br>
  <img src="public/groqlabs-logo-black2.png" alt="AI StockBot" width="500">
