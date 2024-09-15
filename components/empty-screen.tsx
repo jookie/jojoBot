@@ -10,22 +10,7 @@ export function EmptyScreen() {
         <h1 className="text-lg font-semibold">
           Welcome to the Jojo's TraderBot powered by Jojo-Trades!
         </h1>
-        <p className="leading-normal text-sm">
-          Render TradingView
-          stock market widgets.{' Jojo '}
-          <span className="font-muted-foreground">
-            Built with{' JojoInfoSoft'}
-            {/* <ExternalLink href="https://github.com/jookie/jojoBot">
-              Jojo AI SDK{' '}
-            </ExternalLink>
-            <ExternalLink href="https://tradingview.com">
-              , TradingView Widgets
-            </ExternalLink>
-            , and powered by{' '}
-            <ExternalLink href="https://groq.com">Jojo</ExternalLink> */}
-          </span>
-        </p>
-      </div>
+       </div>
     </div>
   )
 }
