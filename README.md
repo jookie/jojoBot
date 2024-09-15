@@ -1,5 +1,5 @@
 <div align="center">
-<h2>
+<h3>
 <br>
 
 [OverView](/docs/MD/OverView.md) |
@@ -9,7 +9,7 @@
 [FAQ](/docs/MD/READMEfaq.md) | 
 [SnapShot](/docs/MD/READMECodeSnapShot.md) 
 
-</h2>
+</h3>
 </div>
 
 # Renforced Learning Trading Bot
