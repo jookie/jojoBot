@@ -1,7 +1,6 @@
 {
   "version": 2,
-  
-  "routes": [
+   "routes": [
     {
       "src": "/(.*)",
       "dest": "./../PY1/index.py"
