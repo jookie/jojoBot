@@ -30,10 +30,6 @@ def home():
 def about():
     return 'About'
 
-# Users/dovpeles/workspace/jojobot/py/greet.py
-
-# from finrl.config_tickers import DOW_30_TICKER
-# print(DOW_30_TICKER) 
 from datetime import datetime
 now = datetime.now()
 formatted_time = now.strftime("%Y-%m-%d %H:%M:%S")
