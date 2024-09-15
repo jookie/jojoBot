@@ -8,7 +8,7 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 border bg-background p-8">
         <h1 className="text-lg font-semibold">
-          Welcome to the Jojo's TraderBot powered by Jojo-Trades!
+          Welcome to the Jojo TraderBot powered by JojoTrades!
         </h1>
        </div>
     </div>
