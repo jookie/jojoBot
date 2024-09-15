@@ -1,8 +1,6 @@
-from flask import Flask, request, jsonify # Import the Flask class from the flask module and other necessary modules    
+from flask import Flask, request, jsonify # Import the Flask class from the flask module 
 import time  # Example module to simulate processing time
-from flask_cors import CORS # This is the only new import  # Import the Flask class from the flask module and other necessary modules 
-
- 
+from flask_cors import CORS # This is the only new import  # Import the Flask class from 
 app = Flask(__name__) # Create a Flask app
 CORS(app) # This will enable CORS for all routes
 
