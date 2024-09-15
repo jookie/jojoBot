@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "./../PY1/index.py",
-      "use": "@vercel/python"
-    }
-  ],
+  
   "routes": [
     {
       "src": "/(.*)",
