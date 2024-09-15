@@ -6,7 +6,7 @@
 git push --set-upstream origin main
 git branch -M main
 git add .
-git commit -m "vercel-build-not-working"
+git commit -m "vercel-fix"
 git push -u origin main
 # -----------Go to GitHub and log in.
 # 1. Click on the "New" button to create a new repository.
