@@ -4,7 +4,7 @@
 # git remote -v
 # git remote add origin https://github.com/jookie/jojoStock.git
 # git push --set-upstream origin main
-# git branch -M main
+git branch -M main
 git add .
 git commit -m "vercel-build-not-working"
 git push -u origin main
