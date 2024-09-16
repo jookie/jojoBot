@@ -1,6 +1,12 @@
 {
   "version": 2,
-   "routes": [
+  "builds": [
+    {
+      "src": "./../PY1/index.py",
+      "use": "@vercel/python3"
+    }
+  ],
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "./../PY1/index.py"

@@ -8,6 +8,7 @@
 [OverView](OverView.md) |
 [PaperTrading](READMExpAlpacaPaperTrading.md) | 
 [Trading Experiments](READMExperiment.md) |
+[TECH](/docs/MD/README.TECH.md) |
 [FAQ](READMEfaq.md) | 
 [SnapShot](READMECodeSnapShot.md) 
 

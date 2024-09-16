@@ -1,14 +1,14 @@
 <div align="center">
 <h3>
 <br>
-        
-    [OverView](/docs/MD/OverView.md) |
-    [DOW Stable Base Line](/docs/MD/StableBasdelineDowJones.md) |
-    [Trading Experiments](/docs/MD/READMExperiment.md) |
-    [PaperTrading](/docs/MD/READMExpAlpacaPaperTrading.md) | 
-    [](/docs/MD/)
-    [FAQ](/docs/MD/READMEfaq.md) | 
-    [SnapShot](/docs/MD/READMECodeSnapShot.md) 
+    
+[OverView](/docs/MD/OverView.md) |
+[DOW Stable Base Line](/docs/MD/StableBasdelineDowJones.md) |
+[Trading Experiments](/docs/MD/READMExperiment.md) |
+[PaperTrading](/docs/MD/READMExpAlpacaPaperTrading.md) | 
+[TECH](/docs/MD/README.TECH.md) |
+[FAQ](/docs/MD/READMEfaq.md) | 
+[SnapShot](/docs/MD/READMECodeSnapShot.md) 
 
 </h3>
 </div>
