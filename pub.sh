@@ -14,9 +14,8 @@ git push -u origin main
    # Do not initialize the repository with a README, .gitignore, or license if you've already initialized your project locally.
 # --------Remove Repository:
 # rm -rf .git
-## git remote add origin <remote_repository_URL>
-## 👇️ install yarn cli globally
-# npm install -g yarn
+
+
 
 
 
