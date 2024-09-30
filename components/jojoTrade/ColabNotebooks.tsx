@@ -17,10 +17,10 @@ const notebooks = [
     link: 'https://colab.research.google.com/github/alpacahq/alpaca-py/blob/master/examples/crypto-trading-basic.ipynb'
   },
   {
-    name: 'Stock Trading 1',
+    name: 'Stock Ensemble',
     file: 'FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb',
     link: 'https://colab.research.google.com/github/AI4Finance-Foundation/FinRL-Tutorials/blob/master/2-Advance/FinRL_Ensemble_StockTrading_ICAIF_2020.ipynb'
-  },
+  }
 ]  
 import { cn } from '@/lib/utils'
 
